@@ -1,1 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexx ❤️ Fatima – 4 Mahine Ishq Ke</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="page active" id="page1">
+            <div class="content">
+                <div class="typewriter-text">
+                    <h1>Rexx ❤️ Fatima</h1>
+                    <h2>4 Mahine Ishq Ke</h2>
+                    <p>17 October 2025... Aj se theek 4 mahine pehle hum mile the 💕</p>
+                    <p>Us din dil ne chupke se kaha tha... 'yeh waali alag hai' 😳</p>
+                    <p>Aur sach me, Fatima… tu alag hi hai 😚💞</p>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Chalo yaad karte hain hamari kahani 💫</button>
+            </div>
+            <div class="floating-emojis">
+                <span class="emoji">💞</span>
+                <span class="emoji">💫</span>
+                <span class="emoji">😚</span>
+                <span class="emoji">💕</span>
+            </div>
+        </div>
 
+        <div class="page" id="page2">
+            <div class="content">
+                <h2>Dil Ki Dastaan 💖</h2>
+                <div class="poetic-text">
+                    <p>Pehli mulaqat to sirf lafzon me hui thi,</p>
+                    <p>Magar mehsoos aisa hua jaise purani pehchaan ho 💫</p>
+                    <p>Har message me ek nayi muskurahat,</p>
+                    <p>Har call me ek nayi dhadkan 💕</p>
+                    <p>Rexx ke lafzon me Fatima ka jadoo bas gaya tha,</p>
+                    <p>aur Fatima ke khayalon me Rexx ka tasavvur 🥺💗</p>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Ab thoda mazaak ho jaye 😏</button>
+            </div>
+            <div class="floating-emojis">
+                <span class="emoji">💞</span>
+                <span class="emoji">💫</span>
+                <span class="emoji">😚</span>
+            </div>
+        </div>
+
+        <div class="page" id="page3">
+            <div class="content">
+                <h2>Teasing Zone 😏</h2>
+                <div class="teasing-container">
+                    <div id="teasing-dialogue" class="dialogue-box">
+                        <p id="dialogue-text">Loading cute dialogues... 💕</p>
+                    </div>
+                    <button class="romantic-btn" onclick="nextTeasingDialogue()">Next Dialogue 😚</button>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Game khelte hain, ap aur main 🎮</button>
+            </div>
+            <div class="floating-emojis">
+                <span class="emoji">😳</span>
+                <span class="emoji">💞</span>
+                <span class="emoji">😚</span>
+                <span class="emoji">💋</span>
+            </div>
+        </div>
+
+        <div class="page" id="page4">
+            <div class="content">
+                <h2>Heart Bucket Game 🎮</h2>
+                <div class="game-container">
+                    <div class="score">Score: <span id="score">0</span></div>
+                    <div class="game-area">
+                        <div class="hearts-container" id="hearts-container"></div>
+                        <div class="bucket" id="bucket">🪣</div>
+                    </div>
+                    <div class="game-dialogue" id="game-dialogue">
+                        <p>Use arrow keys to move the bucket! 💕</p>
+                    </div>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Bas ab dil bhar gaya 😳 → Next</button>
+            </div>
+        </div>
+
+        <div class="page" id="page5">
+            <div class="content">
+                <h2>Truth or Dare (Love Edition) 💋</h2>
+                <div class="truth-dare-container">
+                    <div class="question-box" id="question-box">
+                        <p>Click the button to get a question! 💕</p>
+                    </div>
+                    <button class="romantic-btn" onclick="showTruthOrDare()">Truth or Dare? 😚</button>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Kafi ho gaya, chalo aage 💫</button>
+            </div>
+        </div>
+
+        <div class="page" id="page6">
+            <div class="content">
+                <h2>The Secret Love Letter 💌</h2>
+                <div class="letter-container">
+                    <div class="envelope" id="envelope" onclick="openLetter()">
+                        <div class="envelope-front">🔒</div>
+                        <div class="envelope-back">💌</div>
+                    </div>
+                    <div class="letter-content" id="letter-content" style="display: none;">
+                        <div class="letter-text">
+                            <h3>Fatima,</h3>
+                            <p>Har din tere bina adhoora lagta hai,</p>
+                            <p>Har raat me sirf tera khayal hota hai 💞</p>
+                            <p>8 saal baad jab milenge,</p>
+                            <p>to main kahunga — 'Ab bas, mera intezaar khatam hua, meri Fatima aa gayi 💍'</p>
+                            <p class="signature">- Rexx 💕</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Aage badhein, meri jaan 😚</button>
+            </div>
+        </div>
+
+        <div class="page" id="page7">
+            <div class="content">
+                <h2>Countdown to Forever 💫</h2>
+                <div class="countdown-container">
+                    <div class="countdown-text">
+                        <p>Bas itna sa intezaar aur... Phir Rexx aur Fatima — ek hamesha ke liye 💞</p>
+                    </div>
+                    <div class="countdown-timer" id="countdown-timer">
+                        <div class="time-unit">
+                            <span id="years">0</span>
+                            <label>Years</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="months">0</span>
+                            <label>Months</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="days">0</span>
+                            <label>Days</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="hours">0</span>
+                            <label>Hours</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Chalo next page pe chalte hain 🌹</button>
+            </div>
+            <div class="floating-emojis">
+                <span class="emoji">✨</span>
+                <span class="emoji">⏳</span>
+                <span class="emoji">💞</span>
+            </div>
+        </div>
+
+        <div class="page" id="page8">
+            <div class="content">
+                <h2>Choose Your Love 💞</h2>
+                <div class="quiz-container">
+                    <div class="question" id="quiz-question">
+                        <p>Apko movie night 🎬 pasand hai ya long call ☎️?</p>
+                    </div>
+                    <div class="options">
+                        <button class="option-btn" onclick="selectOption('movie')">Movie Night 🎬</button>
+                        <button class="option-btn" onclick="selectOption('call')">Long Call ☎️</button>
+                    </div>
+                    <div class="fatima-response" id="fatima-response">
+                        <p>Fatima Bot 💬: Aray Rexx, ap bhi na… blush karwa dete hain 😳💞</p>
+                    </div>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Next 🥺</button>
+            </div>
+        </div>
+
+        <div class="page" id="page9">
+            <div class="content">
+                <h2>Future Vision 🌙</h2>
+                <div class="future-text">
+                    <p>Shaadi wale din, jab ap mere paas aayengi,</p>
+                    <p>to main sirf itna kahunga...</p>
+                    <p>'Dekha Fatima, keh raha tha na... tu meri kismet hai 💍💖'</p>
+                </div>
+                <button class="romantic-btn" onclick="nextPage()">Aakhri page 💌</button>
+            </div>
+            <div class="floating-emojis">
+                <span class="emoji">💍</span>
+                <span class="emoji">💖</span>
+                <span class="emoji">✨</span>
+            </div>
+        </div>
+
+        <div class="page" id="page10">
+            <div class="content">
+                <h2 class="celebration-title">Happy 4-Month Anniversary</h2>
+                <h1 class="main-title">Rexx ❤️ Fatima</h1>
+                <div class="celebration-text">
+                    <p>From ek cute baat → ek rishta → ek kahani → aur ab forever 💞</p>
+                </div>
+                <button class="romantic-btn" onclick="restartApp()">Phir se shuru karein 💫</button>
+            </div>
+            <div class="floating-emojis">
+                <span class="emoji">💋</span>
+                <span class="emoji">😚</span>
+                <span class="emoji">💞</span>
+                <span class="emoji">🌙</span>
+                <span class="emoji">✨</span>
+                <span class="emoji">💍</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

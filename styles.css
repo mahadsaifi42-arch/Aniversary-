@@ -1,0 +1,599 @@
+/* Rexx ❤️ Fatima - Romantic Web App Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+.page.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #e91e63;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #9c27b0;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Typewriter Animation */
+.typewriter-text p {
+    opacity: 0;
+    animation: typewriter 2s ease-in-out forwards;
+}
+
+.typewriter-text p:nth-child(1) { animation-delay: 0.5s; }
+.typewriter-text p:nth-child(2) { animation-delay: 1.5s; }
+.typewriter-text p:nth-child(3) { animation-delay: 2.5s; }
+.typewriter-text p:nth-child(4) { animation-delay: 3.5s; }
+.typewriter-text p:nth-child(5) { animation-delay: 4.5s; }
+
+@keyframes typewriter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Buttons */
+.romantic-btn {
+    background: linear-gradient(45deg, #ff6b9d, #c44569);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(255, 107, 157, 0.3);
+    margin: 10px;
+}
+
+.romantic-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(255, 107, 157, 0.4);
+    background: linear-gradient(45deg, #ff8fab, #d63384);
+}
+
+.romantic-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Floating Emojis */
+.floating-emojis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.emoji {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+.emoji:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.emoji:nth-child(2) {
+    top: 30%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.emoji:nth-child(3) {
+    bottom: 30%;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.emoji:nth-child(4) {
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+/* Poetic Text */
+.poetic-text {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #666;
+    margin: 30px 0;
+}
+
+/* Teasing Container */
+.teasing-container {
+    margin: 30px 0;
+}
+
+.dialogue-box {
+    background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #e17055;
+}
+
+#dialogue-text {
+    font-size: 1.3rem;
+    color: #2d3436;
+    font-weight: 500;
+}
+
+/* Game Styles */
+.game-container {
+    margin: 30px 0;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.game-area {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(180deg, #74b9ff 0%, #0984e3 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px 0;
+    border: 3px solid #fff;
+}
+
+.hearts-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    animation: fall 3s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes fall {
+    from {
+        top: -50px;
+        transform: rotate(0deg);
+    }
+    to {
+        top: 100%;
+        transform: rotate(360deg);
+    }
+}
+
+.bucket {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    transition: left 0.1s ease;
+    cursor: pointer;
+}
+
+.game-dialogue {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* Truth or Dare */
+.truth-dare-container {
+    margin: 30px 0;
+}
+
+.question-box {
+    background: linear-gradient(135deg, #fd79a8, #fdcb6e);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-box p {
+    font-size: 1.3rem;
+    color: #2d3436;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Letter Styles */
+.letter-container {
+    margin: 30px 0;
+}
+
+.envelope {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.envelope:hover {
+    transform: scale(1.1);
+}
+
+.envelope-front, .envelope-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.envelope-front {
+    background: linear-gradient(135deg, #ff7675, #fd79a8);
+    z-index: 2;
+}
+
+.envelope-back {
+    background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+    z-index: 1;
+}
+
+.envelope.opened .envelope-front {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.envelope.opened .envelope-back {
+    transform: rotateY(0deg);
+}
+
+.letter-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e91e63;
+    margin-top: 20px;
+}
+
+.letter-text {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+    color: #e91e63;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Countdown Styles */
+.countdown-container {
+    margin: 30px 0;
+}
+
+.countdown-text {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.time-unit {
+    background: linear-gradient(135deg, #fd79a8, #fdcb6e);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.time-unit span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+.time-unit label {
+    font-size: 1rem;
+    color: #636e72;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Quiz Styles */
+.quiz-container {
+    margin: 30px 0;
+}
+
+.question {
+    background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.option-btn {
+    background: linear-gradient(45deg, #00b894, #00cec9);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.option-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 184, 148, 0.3);
+}
+
+.fatima-response {
+    background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #2d3436;
+}
+
+/* Future Vision */
+.future-text {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #666;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+/* Celebration Styles */
+.celebration-title {
+    font-size: 2rem;
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 4rem;
+    color: #9c27b0;
+    margin-bottom: 30px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.celebration-text {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .countdown-timer {
+        gap: 15px;
+    }
+    
+    .time-unit {
+        min-width: 80px;
+        padding: 15px;
+    }
+    
+    .time-unit span {
+        font-size: 2rem;
+    }
+    
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .floating-emojis .emoji {
+        font-size: 1.5rem;
+    }
+}
+
+/* Special Animations */
+.heart-burst {
+    animation: heartBurst 1s ease-out;
+}
+
+@keyframes heartBurst {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff6b9d, #c44569);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ff8fab, #d63384);
+}
