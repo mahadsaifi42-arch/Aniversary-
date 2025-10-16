@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ғᴏʀ ᴍʏ sᴡᴇᴇᴛʜᴇᴀʀᴛ 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Heart Rain Container -->
+    <div class="heart-rain-container"></div>
+
+    <div class="container">
+
+        <!-- Page 1: Welcome & Anniversary -->
+        <div id="page-1" class="page active">
+            <h1>Hᴇʏ Mʏ Lᴏᴠᴇ! 💕</h1>
+            <p>Hᴀᴘᴘʏ 4 Mᴏɴᴛʜs Aɴɴɪᴠᴇʀsᴀʀʏ, Mʏ Lᴏᴠᴇ ! ✨</p>
+            <p>Wʜᴏ Kɴᴇᴡs Kɪ Eᴋ Cᴏɴғᴇss Mᴇʀɪ Lɪғᴇ Bᴀᴅᴀʟ Dᴇɢᴀ 😍</p>
+            <button onclick="showPage(2)" class="btn">sᴛᴀʀᴛ ɴᴏᴡ !! </button>
+        </div>
+
+        <!-- Page 2: Mini-Game 1 - Guess the Emoji! -->
+        <div id="page-2" class="page">
+            <h1>ᴀ ʟɪᴛᴛʟᴇ ɢᴀᴍᴇ ғᴏʀ ʏᴏᴜ! 😉</h1>
+            <p>ʟᴇᴛ's ᴘʟᴀʏ ᴀ sᴍᴀʟʟ ɢᴀᴍᴇ! ɢᴜᴇss ᴡʜᴀᴛ ᴛʜᴇsᴇ ᴇᴍᴏᴊɪs ʀᴇᴘʀᴇsᴇɴᴛ...</p>
+            
+            <div class="game-section">
+                <p>❓❓❓ 🥺</p>
+                <button class="btn-small" onclick="revealAnswer(this, 'Sᴏʀʀʏ Fᴏʀ Eᴠᴇʀʏ Tʜɪɴɢ I'ᴠᴇ Dᴏɴᴇ Tᴏ Yᴏᴜ! 🤗')">ʀᴇᴠᴇᴀʟ! 💡</button>
+                <p class="answer" style="display: none;"></p>
+            </div>
+            
+            <div class="game-section">
+                <p>❓❓❓ 😴</p>
+                <button class="btn-small" onclick="revealAnswer(this, 'Eᴠᴇʀʏ Sɪɴɢʟᴇ Pʜᴏᴛᴏ Oғ Yᴏᴜ Uғғғғ')">ʀᴇᴠᴇᴀʟ! 💡</button>
+                <p class="answer" style="display: none;"></p>
+            </div>
+
+            <button onclick="showPage(3)" class="btn next-btn">ɴᴇxᴛ ᴜᴘ... ➡️</button>
+        </div>
+
+        <!-- Page 3: Feelings & Virtual Hug -->
+        <div id="page-3" class="page">
+            <h1>ᴍʏ ʜᴇᴀʀᴛ's ᴄᴏɴғᴇssɪᴏɴ ❤️</h1>
+            <p>ɪɴ ᴛʜᴇ ᴘᴀsᴛ 4 ᴍᴏɴᴛʜs, ᴡᴇ'ᴠᴇ ᴛᴀʟᴋᴇᴅ sᴏ ᴍᴜᴄʜ, ʟᴀᴜɢʜᴇᴅ sᴏ ʜᴀʀᴅ 😂, ᴀɴᴅ ᴅʀᴇᴀᴍᴛ sᴏ ʙɪɢ.</p>
+            <p>ᴇᴠᴇʀʏ ᴅᴀʏ, ɪ ғᴀʟʟ ғᴏʀ ʏᴏᴜ ᴇᴠᴇɴ ᴍᴏʀᴇ. ʏᴏᴜʀ sᴡᴇᴇᴛ sᴍɪʟᴇ 😊, ʏᴏᴜʀ ᴀᴅᴏʀᴀʙʟᴇ ᴘᴏᴜᴛ 😠... ᴇᴠᴇʀʏᴛʜɪɴɢ ᴀʙᴏᴜᴛ ʏᴏᴜ!</p>
+            <p>ɪ ᴡɪsʜ ɪ ᴄᴏᴜʟᴅ ɢɪᴠᴇ ʏᴏᴜ ᴛʜᴇ ᴛɪɢʜᴛᴇsᴛ ʜᴜɢ ʀɪɢʜᴛ ɴᴏᴡ. 🤗</p>
+            <button onclick="showPage(4)" class="btn">ғᴏʀ ᴛʜᴇ ʙɪɢ ɴᴇᴡs... 💍</button>
+        </div>
+
+        <!-- Page 4: The BIG Reveal - 8 Year Plan! -->
+        <div id="page-4" class="page">
+            <h1>ᴍʏ 8-ʏᴇᴀʀ ᴘʟᴀɴ (ᴡɪᴛʜ ʏᴏᴜ ɪɴ ɪᴛ!) ⏳</h1>
+            <p>ʟɪsᴛᴇɴ, ᴍʏ ʟᴏᴠᴇ... ᴀ sᴇᴄʀᴇᴛ. ᴏʀ ᴍᴀʏʙᴇ ɴᴏᴛ, ᴇᴠᴇʀʏᴛʜɪɴɢ's ᴏᴘᴇɴ ғᴏʀ ʏᴏᴜ. 😉</p>
+            <p>ᴡᴇ ʜᴀᴠᴇɴ'ᴛ ᴍᴇᴛ ʏᴇᴛ, ʀɪɢʜᴛ? ʙᴜᴛ ʏᴏᴜ'ᴠᴇ ʙᴇᴇɴ ɪɴ ᴍʏ ʜᴇᴀʀᴛ ғᴏʀᴇᴠᴇʀ. ❤️</p>
+            <p>ᴀɴᴅ ɢᴜᴇss ᴡʜᴀᴛ? ɪ ʜᴀᴠᴇ ᴀɴ **8-ʏᴇᴀʀ ᴘʟᴀɴ** ғᴏʀ ᴍʏ ʟɪғᴇ...</p>
+            <p>ᴀɴᴅ ɢᴜᴇss ᴡʜᴏ's ᴀᴛ ᴛʜᴇ **ᴠᴇʀʏ ᴄᴇɴᴛᴇʀ ᴏғ ᴛʜᴀᴛ ᴘʟᴀɴ? ʏᴏᴜ, ᴍʀs ғᴀᴛɪᴍᴀ !** 💍</p>
+            <p>ʏᴇs, ɪ'ᴍ ᴛᴀʟᴋɪɴɢ ᴀʙᴏᴜᴛ ᴍᴀʀʀɪᴀɢᴇ! 😅</p>
+            <p>ᴍʏ ғᴜᴛᴜʀᴇ ᴡɪғᴇ, ᴅɪᴅ ʏᴏᴜ ᴊᴜsᴛ ʙʟᴜsʜ? 😉</p>
+            <button onclick="showPage(5)" class="btn">ᴀ ʟɪᴛᴛʟᴇ ᴄʜᴀʟʟᴇɴɢᴇ... 💌</button>
+        </div>
+
+        <!-- Page 5: Mini-Game 2 - "Find the Hidden Heart!" -->
+        <div id="page-5" class="page">
+            <h1>ғɪɴᴅ ᴛʜᴇ ʜɪᴅᴅᴇɴ ʜᴇᴀʀᴛ! 🕵️‍♀️</h1>
+            <p>ᴀɴᴏᴛʜᴇʀ ᴍɪɴɪ-ɢᴀᴍᴇ! ɪɴ ᴛʜᴇ ᴛᴇxᴛ ʙᴇʟᴏᴡ, ᴛʜᴇʀᴇ's ᴀɴ **ᴇxᴛʀᴀ ʜɪᴅᴅᴇɴ ʜᴇᴀʀᴛ ᴇᴍᴏᴊɪ** sᴏᴍᴇᴡʜᴇʀᴇ.</p>
+            <p>ғɪɴᴅ ɪᴛ ᴀɴᴅ ᴄʟɪᴄᴋ ɪᴛ! ᴛʜᴇʀᴇ's ᴀ sᴍᴀʟʟ sᴜʀᴘʀɪsᴇ ғᴏʀ ʏᴏᴜ ɪɴsɪᴅᴇ. ✨</p>
+
+            <p class="challenge-text">
+                ʏᴏᴜʀ ʙᴇᴀᴜᴛʏ ✨, ʏᴏᴜʀ ᴠᴏɪᴄᴇ 🎶, ʏᴏᴜʀ ᴄᴏᴍᴘᴀɴʏ 💖... ᴇᴠᴇʀʏᴛʜɪɴɢ ᴀʙᴏᴜᴛ ʏᴏᴜ ɪs sᴘᴇᴄɪᴀʟ.
+                ʏᴏᴜ'ᴠᴇ ᴄʜᴀɴɢᴇᴅ ᴇᴠᴇʀʏᴛʜɪɴɢ ɪɴ ᴍʏ ʟɪғᴇ. ɪ ᴀᴅᴏʀᴇ ʏᴏᴜ sᴏ ᴍᴜᴄʜ.
+                ᴇᴠᴇʀʏ ᴅᴀʏ, ɪ ᴛʜɪɴᴋ ᴀʙᴏᴜᴛ ʏᴏᴜ. 💭
+                💖 ɪ ᴀʟᴡᴀʏs ᴡᴀɴᴛ ᴛᴏ ᴋᴇᴇᴘ ʏᴏᴜ ʜᴀᴘᴘʏ. 💖
+                <span id="hidden-heart" onclick="showHiddenHeartSurprise()" class="clickable-heart">❤️</span> ᴡɪᴛʜᴏᴜᴛ ʏᴏᴜ, ᴇᴠᴇʀʏᴛʜɪɴɢ ғᴇᴇʟs ɪɴᴄᴏᴍᴘʟᴇᴛᴇ. ❤️
+            </p>
+            <button onclick="showPage(6)" class="btn next-btn">ᴋᴇᴇᴘ ɢᴏɪɴɢ... 🌷</button>
+        </div>
+        
+        <!-- Page 6: Catch the Hearts Game -->
+        <div id="page-6" class="page">
+            <h1>ᴄᴀᴛᴄʜ ᴛʜᴇ ʜᴇᴀʀᴛs! ❤️</h1>
+            <p>ᴍʏ ʟᴏᴠᴇ, ᴄᴀᴛᴄʜ 15 ʜᴇᴀʀᴛs ɪɴ ᴛʜᴇ ʙᴜᴄᴋᴇᴛ ᴛᴏ ᴜɴʟᴏᴄᴋ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ!</p>
+            <div class="game-area">
+                <canvas id="heartGameCanvas" width="300" height="300" tabindex="0"></canvas>
+                <div id="gameScore">sᴄᴏʀᴇ: 0 / 15</div>
+            </div>
+            <button onclick="startGame()" class="btn" id="startGameBtn">sᴛᴀʀᴛ ɢᴀᴍᴇ! ▶️</button>
+            <!-- Game ke baad next page par jaane ke liye ek hidden button ya automatic redirect -->
+            <button onclick="showPage(7)" class="btn next-btn" id="gameNextBtn" style="display: none;">ᴄᴏɴᴛɪɴᴜᴇ... ✨</button>
+        </div>
+
+
+        <!-- Page 7: My Promise & Future Dreams (pehle ka Page 6) -->
+        <div id="page-7" class="page">
+            <h1>ᴍʏ ᴇɴᴅʟᴇss ᴘʀᴏᴍɪsᴇ ᴛᴏ ʏᴏᴜ ✨</h1>
+            <p>ᴍʏ ғᴜᴛᴜʀᴇ ᴡɪғᴇ, ɪ ᴘʀᴏᴍɪsᴇ ᴛʜᴀᴛ:</p>
+            <ul>
+                <li>ɪ'ʟʟ ᴀʟᴡᴀʏs ᴍᴀᴋᴇ ʏᴏᴜ ʟᴀᴜɢʜ. 😂</li>
+                <li>ɪ'ʟʟ ᴀʟᴡᴀʏs sᴜᴘᴘᴏʀᴛ ʏᴏᴜ. 💪</li>
+                <li>ᴀɴᴅ ɪ'ʟʟ ᴀʟᴡᴀʏs, ᴀʟᴡᴀʏs ʟᴏᴠᴇ ʏᴏᴜ. 💕</li>
+                <li>(ᴀɴᴅ ʏᴇs, ɪ'ʟʟ sᴛɪʟʟ ᴛᴇᴀsᴇ ʏᴏᴜ ᴀ ʟɪᴛᴛʟᴇ, ʙᴇᴄᴀᴜsᴇ ʏᴏᴜʀ ʙʟᴜsʜɪɴɢ ғᴀᴄᴇ ɪs ᴍʏ ғᴀᴠᴏʀɪᴛᴇ! 🤭)</li>
+            </ul>
+            <p>ᴅɪsᴛᴀɴᴄᴇ ᴅᴏᴇsɴ'ᴛ ᴍᴀᴛᴛᴇʀ, ᴄᴏɴɴᴇᴄᴛɪᴏɴ ᴅᴏᴇs. ᴀɴᴅ ᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ɪs ᴏᴜᴛ ᴏғ ᴛʜɪs ᴡᴏʀʟᴅ. 🚀</p>
+            <p>ᴡᴇ'ʟʟ ᴍᴇᴇᴛ sᴏᴏɴ, ᴀɴᴅ 8 ʏᴇᴀʀs ғʀᴏᴍ ɴᴏᴡ... ᴡᴇʟʟ, ʏᴏᴜ ᴋɴᴏᴡ! 😉</p>
+            <button onclick="showPage(8)" class="btn">ᴏɴᴇ ʟᴀsᴛ ᴘᴀɢᴇ... 🌈</button>
+        </div>
+
+        <!-- Page 8: Ending - Endless Love! (pehle ka Page 7) -->
+        <div id="page-8" class="page">
+            <h1>ɪ ʟᴏᴠᴇ ʏᴏᴜ sᴏ ᴍᴜᴄʜ! ❤️</h1>
+            <p>ᴊᴜsᴛ ʙᴇ ʜᴀᴘᴘʏ, ᴀʟᴡᴀʏs. 😄</p>
+            <p>ᴀɴᴅ ʀᴇᴍᴇᴍʙᴇʀ ʜᴏᴡ ᴍᴜᴄʜ sᴏᴍᴇᴏɴᴇ ʟᴏᴠᴇs ʏᴏᴜ. (ᴍᴇ! 🙋‍♂️)</p>
+            <p>ʏᴏᴜ ᴀʀᴇ ᴛʜᴇ ᴍᴏsᴛ ʙᴇᴀᴜᴛɪғᴜʟ ᴘᴀʀᴛ ᴏғ ᴍʏ ʟɪғᴇ. ✨</p>
+            <p>ʜᴀᴘᴘʏ 4 ᴍᴏɴᴛʜs ᴀɴɴɪᴠᴇʀsᴀʀʏ, ᴍʏ sᴡᴇᴇᴛɪᴇᴇᴇ 🥰</p>
+            <p class="big-hearts">💗💗</p>
+            <button onclick="showPage(1)" class="btn">ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴍᴀɢɪᴄ ✨</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
