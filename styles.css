@@ -560,41 +560,129 @@ p {
     font-style: italic;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Mobile-First Responsive Design */
+@media (max-width: 480px) {
+    .page {
+        padding: 10px;
+    }
+    
     .content {
-        padding: 20px;
-        margin: 10px;
+        padding: clamp(15px, 4vw, 25px);
+        margin: 5px;
+        border-radius: 20px;
     }
     
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
+    .floating-emojis .emoji {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
     }
     
     .countdown-timer {
-        gap: 15px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
     }
     
     .time-unit {
-        min-width: 80px;
-        padding: 15px;
+        min-width: 70px;
+        padding: 12px;
+        margin: 5px;
     }
     
     .time-unit span {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 6vw, 2.2rem);
     }
     
     .options {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+    }
+    
+    .option-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 15px 20px;
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+    
+    .game-area {
+        height: 250px;
+    }
+    
+    .bucket {
+        font-size: 2.5rem;
+    }
+    
+    .heart {
+        font-size: 1.8rem;
+    }
+    
+    .envelope {
+        width: 150px;
+        height: 120px;
+    }
+    
+    .envelope-front, .envelope-back {
+        font-size: 3rem;
+    }
+    
+    .letter-content {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    
+    .dialogue-box {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+    
+    .question-box {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+    
+    .poetic-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    .future-text {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .content {
+        max-width: 90%;
+        padding: clamp(25px, 4vw, 35px);
+    }
+    
+    .countdown-timer {
+        gap: 20px;
+    }
+    
+    .time-unit {
+        min-width: 90px;
+        padding: 18px;
+    }
+    
+    .options {
+        gap: 20px;
     }
     
     .floating-emojis .emoji {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .content {
+        max-width: 800px;
+    }
+    
+    .floating-emojis .emoji {
+        font-size: 2.2rem;
     }
 }
 
